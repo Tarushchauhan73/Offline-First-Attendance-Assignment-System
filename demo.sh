@@ -28,7 +28,7 @@ echo ""
 
 echo "3️⃣ OPEN IN BROWSER"
 echo "-----------------"
-echo "• Go to: http://localhost:5173"
+echo "• Go to: http://localhost:5174"
 echo "• You'll see the main screen with classes"
 echo ""
 

@@ -63,7 +63,7 @@ npm run dev
 ```
 
 ### Open App
-Go to: **http://localhost:5173**
+Go to: **http://localhost:5174**
 
 ## 📱 Usage
 
@@ -215,7 +215,7 @@ cd ../backend && npm install
 # Terminal 2: cd attendance-app && npm run dev
 ```
 
-### 2. Open: http://localhost:5173
+### 2. Open: http://localhost:5174
 
 ### 3. Take Attendance
 1. **Select a class** (demo data loads automatically)
@@ -277,7 +277,7 @@ npm run dev
 
 ### 4. Open in Browser
 
-Navigate to `http://localhost:5173` (or the port shown by Vite)
+Navigate to `http://localhost:5174` (or the port shown by Vite)
 
 ## Deployment
 

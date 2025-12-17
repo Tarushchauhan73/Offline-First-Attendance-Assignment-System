@@ -29,7 +29,7 @@ npm run dev
 ```
 
 ### Step 3: Open in Browser
-Go to: **http://localhost:5173**
+Go to: **http://localhost:5174**
 
 ## 👨‍🏫 **How Teachers Use It**
 
