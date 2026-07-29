@@ -8,8 +8,8 @@ WORKDIR /app/attendance-app
 # Copy package files
 COPY attendance-app/package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Install dependencies (including devDependencies, needed to build with tsc/vite)
+RUN npm ci
 
 # Copy source code
 COPY attendance-app/ ./
