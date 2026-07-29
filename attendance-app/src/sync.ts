@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getUnsyncedAttendance, markAttendanceSynced } from './db';
 
-const API_BASE_URL = 'http://localhost:3001/api'; // Backend server URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
 export async function syncData() {
   if (!navigator.onLine) {
