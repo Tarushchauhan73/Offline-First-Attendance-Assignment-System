@@ -1,7 +1,7 @@
 # Multi-stage Docker build for Offline-First Attendance System
 
 # Stage 1: Build the frontend
-FROM node:18-alpine AS frontend-build
+FROM node:25-alpine AS frontend-build
 
 WORKDIR /app/attendance-app
 
@@ -18,7 +18,7 @@ COPY attendance-app/ ./
 RUN npm run build
 
 # Stage 2: Setup the backend
-FROM node:18-alpine AS backend-setup
+FROM node:25-alpine AS backend-setup
 
 WORKDIR /app/backend
 
@@ -32,7 +32,7 @@ RUN npm ci --only=production
 COPY backend/ ./
 
 # Stage 3: Production image
-FROM node:18-alpine AS production
+FROM node:25-alpine AS production
 
 # Install serve for serving static files
 RUN npm install -g serve
